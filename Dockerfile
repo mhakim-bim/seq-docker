@@ -1,4 +1,4 @@
-FROM datalust/seq:latest
+FROM datalust/seq
 
 # Set environment variables
 ENV ACCEPT_EULA=Y
