@@ -4,7 +4,7 @@ FROM datalust/seq
 ENV ACCEPT_EULA=Y
 
 # Create a non-root user and switch to it
-RUN adduser -D sequser
+RUN adduser -m sequser
 USER sequser
 
 # Expose the necessary port
