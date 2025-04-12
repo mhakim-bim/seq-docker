@@ -3,9 +3,8 @@ FROM datalust/seq
 # Set environment variables
 ENV ACCEPT_EULA=Y
 
-# Create a non-root user and switch to it
-RUN adduser -m sequser
-USER sequser
+# Force non-root user (avoid permission errors on Render)
+USER 1000:1000
 
 # Expose the necessary port
 EXPOSE 80
